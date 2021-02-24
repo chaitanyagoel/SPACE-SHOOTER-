@@ -1,0 +1,17 @@
+.rules {
+  font-size: 18px;
+  text-align: left;
+  line-height: 2;
+  margin-top: 100px;
+}
+
+.rules__subheader {
+  font-size: 26px;
+  margin: 0 auto 15px;
+}
+
+.pause {
+  position: absolute;
+  top: 1407px;
+  left: calc(60% + 260px);
+}

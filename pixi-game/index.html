@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PLANE SHOOTER</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="images/logo.png" type="image/png" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="./pixi.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+  
+
+  <body style="background-color:black">
+    <div>
+      <img src="images/logo2.png" id="logo" style="width: 100px;margin-top: 50px;margin-left: 350px;">
+      <h1 style="display: inline;top: 80px;margin-left: 150px;position: absolute;color: white;" id="heading">PLANE SHOOTER</h1>
+      <a href="/planeShooter/leaderboard/build/index.html" style="margin-right:22%;display: inline;margin-top:5%;float: right; color:red;font-size:20px;text-decoration:none">
+        <span class=""></span>
+        <span class="">
+          <i class="fa fa-trophy" aria-hidden="true"></i>
+          <span class="">LeaderBoard</span>
+        </span>
+      </a>
+      <h5 style="color: white;margin-left:41%;">Here the movement is life !</h5 >
+      <h6 style="color: white;margin-left:41%;">Made with love by Garvit Chittora</h6>  
+    </div>
+    
+    <ul class="rules" style="margin-left: 20%;color: white;">
+      <h2 class="rules__subheader">CONTROLS :</h2>
+      <h5>Move By : </h5> <li >'W'  (UP) </li> <li> 'A'  (LEFT)</li> <li>'S'  (DOWN)</li>  <li>'D'  (RIGHT)</li> </li>
+      <h5>Shoot By : </h5>
+      <li>'SPACE' bar! (Shoot the plane by bullet)</li>
+      <li>'B' key (Shoot the plane by bomb 20 available)</li>
+      <li>'N' key (Shoot the plane by laser 3 available)</li>
+      <h5>Speed Of Shooter : </h5> 
+      <li>'I'  (increase y velocity) </li><li> 'J'  (decrease x velocity) </li><li> 'K'  (decrease y velocity) </li><li>  'L'  (increase x velocity)</li>
+      <h5>Other Rules : </h5>
+      <li>By 'P' key or by button given on the screen , You can pause the game </li>
+      <li>10 Health available </li>
+      <li>After every certain kill , bomb will increase accordingly . </li>
+      <li>After certain kills , new spaceships will be added . </li>
+      <li>Different spaceship , decrease your health score differently . </li>
+      <li>Now , see you in Leaderboard . </li>
+    </ul>	
+    <h2 style="margin-left: 41%;color:white;margin-top: 50px;" id="choose_text">CHOOSE LEVEL</h2>
+
+    <form name="myForm" style="margin-left: 40%;margin-top: 20px;color: white;">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="easy" id="inlineRadio1" checked="checked" value="4">
+        <label class="form-check-label" for="inlineRadio1">EASY</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="easy" id="inlineRadio2" value="8">
+        <label class="form-check-label" for="inlineRadio2">MEDIUM</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="easy" id="inlineRadio3" value="12">
+        <label class="form-check-label" for="inlineRadio3">HARD</label>
+      </div>
+    </form>
+    <form class="form-group">
+        <div >
+        <input type="text" style="width:30%;margin-top: 20px;float: left; margin-left: 30%;" class="form-control" id="playerNameInput" placeholder="Enter your name">
+      </div>
+      <button type="button" class="btn btn-primary" style="float: left;margin-top: 20px;margin-left: 50px;" id="playerNameButton" onclick="handleName()">Submit</button>
+    </form>
+    <button type="button" class="btn btn-light pause">PAUSE</button>
+    <script src="./index.js"></script>
+    
+    <div style="margin-bottom: 50px; color: white;">
+      <p style="color: white;margin-left: 30%;display: inline;" >© 2020 PLANE SHOOTER , Inc. All rights reserved </p>		
+      <div style="display: inline;">
+        <a href="https://www.instagram.com/garvit_chittora_07/" style="text-decoration: none;">
+          <i class="fa fa-instagram" style="color: white;margin-left: 3%;" aria-hidden="true"></i>
+        </a>
+        <a href="https://twitter.com/ChittoraGarvit" style="text-decoration: none;">
+          <i class="fa fa-twitter" style="color: white;margin-left: 3%;" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.facebook.com/garvit.chittora.90" style="text-decoration: none;">
+          <i class="fa fa-facebook" style="color: white;margin-left: 3%;" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    
+  </body>
+</html>
